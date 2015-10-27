@@ -1,0 +1,1 @@
+web: gunicorn tdunstqu_landing.wsgi --log-file -
