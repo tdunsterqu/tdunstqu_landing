@@ -1,10 +1,11 @@
 {% extends 'base.html' %}
+{% load bootstrap3 %}
 {% block content %}
 <div class="row">
     <div class="col-lg-6">
         <form method="post" action="">
             {% csrf_token %}
-            {{ form.as_p }}
+            {% bootstrap_form form %}
             <button type="send" class="btn btn-primary">Send Message</button>
         </form>
     </div>
