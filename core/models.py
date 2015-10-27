@@ -2,9 +2,8 @@ from django.db import models
 
 # Create your models here.
 class Message(models.Model):
-  title = models.CharField(max_length=300)
-  description = models.TextField(null=True, blank=True)
+  name = models.CharField(max_length=200)
+  email = models.CharField(max_length=200)
+  message = models.TextField(null=True, blank=True)
   created_at = models.DateTimeField(auto_now_add=True)
 
-  def __unicode__(self):
-    return self.title

@@ -10,8 +10,11 @@ class Home(TemplateView):
 class MessageCreateView(CreateView):
     model = Message
     template_name = "message/message_form.html"
-    fields = ['title', 'description']
+    fields = ['name', 'email', 'message']
     success_url = reverse_lazy('success')
 
 class Success(TemplateView):
   template_name = "success.html"
+
+#class About_Me(TemplateView):
+  #template_name = "about_me.html"
