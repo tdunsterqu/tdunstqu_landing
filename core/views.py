@@ -16,5 +16,5 @@ class MessageCreateView(CreateView):
 class Success(TemplateView):
   template_name = "success.html"
 
-#class About_Me(TemplateView):
-  #template_name = "about_me.html"
+class About_Me(TemplateView):
+  template_name = "about/about_me.html"
